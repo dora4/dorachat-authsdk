@@ -34,6 +34,20 @@ dependencies {
 </application>
 ```
 ```kt
+    private fun initHttp() {
+        RetrofitManager.initConfig {
+            okhttp {
+                // ...
+                flow(true) // Important
+                addInterceptor(AuthInterceptor())
+                build()
+            }
+            // ...
+            mappingBaseUrl(AuthService::class.java, AppConfig.AUTH_SDK_SERVER_URL)
+        }
+    }
+```
+```kt
     private fun initAuth() {
         val config = DoraChatConfig.Builder(
             apiBaseUrl = AppConfig.AUTH_SDK_SERVER_URL,
