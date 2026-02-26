@@ -26,3 +26,24 @@ dependencies {
     }
 }
 ```
+```xml
+<application>
+    <meta-data
+        android:name="dora.lifecycle.config.ARouterGlobalConfig"
+        android:value="GlobalConfig" />
+</application>
+```
+```kt
+    private fun initAuth() {
+        val config = DoraChatConfig.Builder(
+            apiBaseUrl = AppConfig.AUTH_SDK_SERVER_URL,
+            partitionId = "petwords",
+            appName = "Pet Words",
+            themeColor = ContextCompat.getColor(this, R.color.primary)
+        )
+            .enableLog(true)
+            .autoRefreshToken(true)
+            .build()
+        DoraChatSDK.init(this, config)
+    }
+```
