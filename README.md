@@ -1,16 +1,17 @@
 dorachat-authsdk ![Release](https://jitpack.io/v/dora4/dorachat-authsdk.svg)
 --------------------------------
 
-#### Gradle依赖配置
+#### Gradle Dependency Configuration
 
 ```groovy
-// 添加以下代码到项目根目录下的build.gradle
+// Add the following code to the build.gradle file in the project root directory
 allprojects {
     repositories {
         maven { url "https://jitpack.io" }
     }
 }
-// 添加以下代码到app模块的build.gradle
+
+// Add the following code to the build.gradle file in the app module
 dependencies {
     implementation 'com.github.dora4:dorachat-authsdk:1.0'
 }
