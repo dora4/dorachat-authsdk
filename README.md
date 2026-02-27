@@ -61,3 +61,20 @@ dependencies {
         DoraChatSDK.init(this, config)
     }
 ```
+```kt
+     private fun initPay() {
+        DoraFund.init(this, APP_NAME,
+            getString(R.string.app_desc), URL_DOMAIN,
+            arrayOf(EVMChains.ETHEREUM, EVMChains.POLYGON, EVMChains.AVALANCHE, EVMChains.BSC), themeColor,
+            object : DoraFund.PayListener {
+                override fun onPayFailure(orderId: String, msg: String) {
+                }
+
+                override fun onSendTransactionToBlockchain(
+                    orderId: String,
+                    transactionHash: String
+                ) {
+                }
+            })
+    }
+```
