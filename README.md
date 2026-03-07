@@ -26,6 +26,7 @@ dependencies {
     }
 }
 ```
+#### Automatic Injection of Lifecycle Callback Functions
 ```xml
 <application>
     <meta-data
@@ -33,6 +34,7 @@ dependencies {
         android:value="GlobalConfig" />
 </application>
 ```
+#### Initialize a series of components in the Application
 ```kt
     private fun initHttp() {
         RetrofitManager.initConfig {
