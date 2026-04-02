@@ -11,7 +11,13 @@ allprojects {
     }
 }
 ```
-```kts
+```kt
+// Add data binding support
+android {
+    buildFeatures {
+        dataBinding = true
+    }
+}
 // Add the following code to the build.gradle file in the app module
 dependencies {
     implementation("com.github.dora4:dorachat-authsdk:1.0")
