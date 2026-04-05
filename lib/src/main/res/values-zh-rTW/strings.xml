@@ -11,7 +11,6 @@
     <string name="failed_to_sign_in_with_error">登入失敗， %1$s</string>
     <string name="forget_your_password">忘記密碼？</string>
     <string name="sign_in">登入</string>
-    <string name="sign_out">登出</string>
     <string name="sign_in_button">登入</string>
     <string name="password">密碼</string>
     <string name="forward_dora_chat">請前往 %1$s 下載 Dora Chat</string>

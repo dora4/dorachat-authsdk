@@ -25,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="@string/sign_out"
+        android:text="@string/disconnect"
         android:textColor="@color/colorPrimary"
         android:textColorHighlight="@color/colorPanelBg"
         android:textSize="15sp"/>
