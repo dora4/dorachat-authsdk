@@ -56,8 +56,8 @@ class SignInActivity : BaseActivity<ActivitySignInBindingImpl>() {
                         }
                         getView<TextView>(R.id.tv_card_sign_out)?.apply {
                             setOnClickListener {
-                                dismiss()
                                 DoraFund.disconnectWallet()
+                                dismiss()
                             }
                         }
                     }
