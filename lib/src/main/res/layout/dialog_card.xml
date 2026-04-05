@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingVertical="30dp"
+    android:paddingHorizontal="10dp">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_card_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/ic_launcher"/>
+    <TextView
+        android:id="@+id/tv_card_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        tools:text="ERC20"
+        android:textSize="15sp"/>
+    <TextView
+        android:id="@+id/tv_card_sign_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/sign_out"
+        android:textColor="@color/colorPrimary"
+        android:textColorHighlight="@color/colorPanelBg"
+        android:textSize="15sp"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

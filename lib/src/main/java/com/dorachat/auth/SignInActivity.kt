@@ -9,6 +9,7 @@ import android.text.TextPaint
 import android.text.method.LinkMovementMethod
 import android.text.style.ClickableSpan
 import android.view.View
+import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.core.net.toUri
 import com.alibaba.android.arouter.facade.annotation.Route
@@ -19,6 +20,7 @@ import dora.util.LogUtils
 import dora.util.StatusBarUtils
 import dora.util.ToastUtils
 import dora.util.ViewUtils
+import dora.widget.DoraAlertDialog
 
 @Route(path = ARouterPath.ACTIVITY_SIGN_IN)
 class SignInActivity : BaseActivity<ActivitySignInBindingImpl>() {
@@ -31,10 +33,34 @@ class SignInActivity : BaseActivity<ActivitySignInBindingImpl>() {
         StatusBarUtils.setTransparencyStatusBar(this)
     }
 
+    private fun formatErc20(text: String?): String {
+        if (text.isNullOrEmpty()) return ""
+        val address = text.trim()
+        val isErc20 =
+            address.startsWith("0x") &&
+                    address.length == 42
+        if (!isErc20) return address
+        val prefix = address.take(8)
+        val suffix = address.substring(address.length - 6)
+        return "$prefix******$suffix"
+    }
+
     override fun initData(savedInstanceState: Bundle?, binding: ActivitySignInBindingImpl) {
         binding.tvConnectWallet.setOnClickListener {
             if (DoraFund.isWalletConnected()) {
-                showLongToast(getString(R.string.wallet_connected))
+                DoraAlertDialog.create(this@SignInActivity)
+                    .show(R.layout.dialog_card) {
+                        hideBottomButtons()
+                        getView<TextView>(R.id.tv_card_name)?.apply {
+                            text = formatErc20(DoraFund.getCurrentAddress())
+                        }
+                        getView<TextView>(R.id.tv_card_sign_out)?.apply {
+                            setOnClickListener {
+                                dismiss()
+                                DoraFund.disconnectWallet()
+                            }
+                        }
+                    }
                 return@setOnClickListener
             }
             DoraFund.connectWallet(this)

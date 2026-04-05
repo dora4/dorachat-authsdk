@@ -20,10 +20,9 @@ android {
 }
 // Add the following code to the build.gradle file in the app module
 dependencies {
-    implementation("com.github.dora4:dorachat-authsdk:1.0")
-    implementation("com.github.dora4:dora:1.3.57")
-    implementation("com.github.dora4:dora-arouter-support:1.6")
-    implementation("com.alibaba:arouter-api:1.5.2")
+    implementation("com.github.dora4:dorachat-authsdk:1.0.1")
+    implementation("com.github.dora4:dora:1.3.61")
+    implementation("com.github.dora4:dora-arouter-support:1.11")
     kapt("com.alibaba:arouter-compiler:1.5.2")
     implementation("com.github.dora4:dcache-android:3.6.3")
     implementation("com.github.dora4:dview-loading-dialog:1.5")
