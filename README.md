@@ -85,3 +85,9 @@ dependencies {
             })
     }
 ```
+#### ProGuard/R8
+```
+-keepclassmembers class com.dorachat.auth.ReqBody {
+    <fields>;
+}
+```
