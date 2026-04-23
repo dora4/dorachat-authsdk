@@ -90,4 +90,25 @@ dependencies {
 -keepclassmembers class com.dorachat.auth.ReqBody {
     <fields>;
 }
+-keepclassmembers class com.dorachat.auth.ApiResult {
+    <fields>;
+}
+-keepclassmembers class com.dorachat.auth.DoraUser {
+    <fields>;
+}
+-keepclassmembers class com.dorachat.auth.DoraUserInfo {
+    <fields>;
+}
+-keepclassmembers class com.dorachat.auth.BaseReq {
+    <fields>;
+}
+-keep class * extends com.dorachat.auth.BaseReq {
+    <fields>;
+}
+-keep class com.dorachat.auth.SignInEvent {
+    *;
+}
+-keep class com.dorachat.auth.SignOutEvent {
+    *;
+}
 ```
