@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <color name="colorDoraChatOrange">#FF6600</color>
     <color name="colorPrimary">#FF6600</color>
     <color name="colorAccent">#FF6600</color>
+    <color name="colorPanelFg">#FFFFFF</color>
     <color name="colorPanelBg">#F6F6F6</color>
     <color name="colorInputBg">#F6F6F6</color>
+    <color name="colorTextPrimary">#262628</color>
+    <color name="colorTextSecondary">#9B9B9B</color>
 </resources>

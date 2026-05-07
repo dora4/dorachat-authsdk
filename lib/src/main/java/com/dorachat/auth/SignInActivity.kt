@@ -77,7 +77,7 @@ class SignInActivity : BaseActivity<ActivitySignInBindingImpl>() {
             override fun updateDrawState(ds: TextPaint) {
                 super.updateDrawState(ds)
                 ds.isUnderlineText = false
-                ds.color = ContextCompat.getColor(this@SignInActivity, R.color.colorPrimary) // 高亮颜色
+                ds.color = ContextCompat.getColor(this@SignInActivity, R.color.colorDoraChatOrange) // 高亮颜色
             }
         }, start, end, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
         binding.tvSignUp.text = spannable
