@@ -1,17 +1,23 @@
 package com.dorachat.auth
 
+import androidx.annotation.Keep
 import com.google.gson.Gson
+import com.google.gson.annotations.SerializedName
 import dora.util.GlobalContext
 import dora.util.LanguageUtils
 import java.lang.reflect.Modifier
 import java.util.Locale
 
+@Keep
 abstract class BaseReq {
 
+    @SerializedName("lang")
     var lang: String = ""
 
+    @SerializedName("payload")
     var payload: String = ""
 
+    @SerializedName("timestamp")
     var timestamp: String = ""
 
     init {

@@ -1,5 +1,7 @@
 package com.dorachat.auth
 
+import androidx.annotation.Keep
+import com.google.gson.annotations.SerializedName
 import dora.db.constraint.Id
 import dora.db.migration.OrmMigration
 import dora.db.table.Column
@@ -7,20 +9,27 @@ import dora.db.table.OrmTable
 import dora.db.table.Table
 import java.io.Serializable
 
+@Keep
 @Table("dora_user_info")
 data class DoraUserInfo(
+    @SerializedName("id")
     @Id
     var id: Long = OrmTable.ID_UNASSIGNED,
+    @SerializedName("erc20")
     @Column("erc20")
     var erc20: String,
+    @SerializedName("nickname")
     @Column("nickname")
     var nickname: String? = null,
+    @SerializedName("gender")
     @Column("gender")
     var gender: Int = 0,
+    @SerializedName("introduce")
     @Column("introduce")
     var introduce: String? = null,
-
+    @SerializedName("isUpgradeRecreated")
     override val isUpgradeRecreated: Boolean = false,
+    @SerializedName("migrations")
     override val migrations: Array<OrmMigration>? = arrayOf()
 ) : OrmTable, Serializable {
 
@@ -72,9 +81,7 @@ data class DoraUserInfo(
     override fun equals(other: Any?): Boolean {
         if (this === other) return true
         if (javaClass != other?.javaClass) return false
-
         other as DoraUserInfo
-
         if (id != other.id) return false
         if (gender != other.gender) return false
         if (isUpgradeRecreated != other.isUpgradeRecreated) return false
@@ -82,7 +89,6 @@ data class DoraUserInfo(
         if (nickname != other.nickname) return false
         if (introduce != other.introduce) return false
         if (!migrations.contentEquals(other.migrations)) return false
-
         return true
     }
 

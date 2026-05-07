@@ -3,4 +3,5 @@
     <color name="colorPrimary">#FF6600</color>
     <color name="colorAccent">#FF6600</color>
     <color name="colorPanelBg">#F6F6F6</color>
+    <color name="colorInputBg">#F6F6F6</color>
 </resources>
