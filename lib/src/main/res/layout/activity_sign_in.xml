@@ -29,7 +29,7 @@
                     android:text="@string/sign_in"
                     android:textSize="34sp"
                     android:textStyle="bold"
-                    android:textColor="@color/colorTextPrimary"/>
+                    android:textColor="@color/dorachat_text_primary"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -37,14 +37,14 @@
                     android:layout_marginStart="36dp"
                     android:text="@string/password"
                     android:textSize="20sp"
-                    android:textColor="@color/colorTextSecondary"/>
+                    android:textColor="@color/dorachat_text_secondary"/>
                 <androidx.appcompat.widget.AppCompatEditText
                     android:id="@+id/et_password"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginTop="12dp"
                     android:layout_marginHorizontal="36dp"
-                    android:textColor="@color/colorTextPrimary"
+                    android:textColor="@color/dorachat_text_primary"
                     android:padding="8dp"
                     android:maxLength="16"
                     android:inputType="textPassword"
@@ -66,7 +66,7 @@
                     android:layout_marginVertical="40dp"
                     android:text="@string/forget_your_password"
                     android:textSize="16sp"
-                    android:textColor="@color/colorTextPrimary"/>
+                    android:textColor="@color/dorachat_text_primary"/>
             </LinearLayout>
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -80,7 +80,7 @@
                     android:gravity="center"
                     android:layout_marginVertical="30dp"
                     android:textSize="16sp"
-                    android:textColor="@color/colorTextSecondary"/>
+                    android:textColor="@color/dorachat_text_secondary"/>
             </RelativeLayout>
         </LinearLayout>
         <androidx.appcompat.widget.AppCompatImageView

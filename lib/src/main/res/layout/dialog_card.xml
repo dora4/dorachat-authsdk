@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="@string/disconnect"
-        android:textColor="@color/colorPrimary"
-        android:textColorHighlight="@color/colorPanelBg"
+        android:textColor="@color/dorachat_primary"
+        android:textColorHighlight="@color/dorachat_panel_bg"
         android:textSize="15sp"/>
 </androidx.appcompat.widget.LinearLayoutCompat>
