@@ -90,13 +90,13 @@ dependencies {
 -keepclassmembers class com.dorachat.auth.ReqBody {
     <fields>;
 }
--keepclassmembers class com.dorachat.auth.ApiResult {
+-keep class com.dorachat.auth.ApiResult {
     <fields>;
 }
--keepclassmembers class com.dorachat.auth.DoraUser {
+-keep class com.dorachat.auth.DoraUser {
     <fields>;
 }
--keepclassmembers class com.dorachat.auth.DoraUserInfo {
+-keep class com.dorachat.auth.DoraUserInfo {
     <fields>;
 }
 -keepclassmembers class com.dorachat.auth.BaseReq {
