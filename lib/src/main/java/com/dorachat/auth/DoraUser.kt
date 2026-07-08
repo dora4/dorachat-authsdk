@@ -21,4 +21,11 @@ data class DoraUser(
         accessToken = "",
         refreshToken = ""
     )
+
+    constructor(erc20: String, latestSignIn: Long, accessToken: String) : this(
+        erc20 = erc20,
+        latestSignIn = latestSignIn,
+        accessToken = accessToken,
+        refreshToken = ""
+    )
 }

@@ -84,7 +84,25 @@
             </RelativeLayout>
         </LinearLayout>
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/tv_connect_wallet"
+            android:id="@+id/iv_back"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="top|start"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ic_sign_in_back"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|end"
+            android:textColor="#FFDEAD"
+            android:text="@string/powered_by_dora_chat"
+            android:visibility="gone"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="30dp"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_connect_wallet"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_gravity="bottom|center_horizontal"

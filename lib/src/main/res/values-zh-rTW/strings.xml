@@ -15,4 +15,5 @@
     <string name="password">密碼</string>
     <string name="forward_dora_chat">請前往 %1$s 下載 Dora Chat</string>
     <string name="unable_to_open_browser">無法開啟瀏覽器</string>
+    <string name="powered_by_dora_chat">由 Dora Chat 提供技術支援</string>
 </resources>

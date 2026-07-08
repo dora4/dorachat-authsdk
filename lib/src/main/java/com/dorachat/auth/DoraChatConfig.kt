@@ -8,6 +8,8 @@ class DoraChatConfig private constructor(
     val appName: String,
     @ColorInt val themeColor: Int,
     val enableLog: Boolean,
+    val showBrand: Boolean,
+    val loadAccessToken: Boolean,
     val autoRefreshToken: Boolean
 ) {
 
@@ -19,10 +21,20 @@ class DoraChatConfig private constructor(
     ) {
 
         private var enableLog: Boolean = false
+        private var showBrand: Boolean = true
+        private var loadAccessToken: Boolean = false
         private var autoRefreshToken: Boolean = true
 
         fun enableLog(enable: Boolean) = apply {
             this.enableLog = enable
+        }
+
+        fun showBrand(enable: Boolean) = apply {
+            this.showBrand = enable
+        }
+
+        fun loadAccessToken(enable: Boolean) = apply {
+            this.loadAccessToken = enable
         }
 
         fun autoRefreshToken(enable: Boolean) = apply {
@@ -40,6 +52,8 @@ class DoraChatConfig private constructor(
                 appName = appName,
                 themeColor = themeColor,
                 enableLog = enableLog,
+                showBrand = showBrand,
+                loadAccessToken = loadAccessToken,
                 autoRefreshToken = autoRefreshToken
             )
         }

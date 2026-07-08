@@ -15,4 +15,5 @@
     <string name="password">Password</string>
     <string name="forward_dora_chat">Please visit %1$s to download Dora Chat</string>
     <string name="unable_to_open_browser">Unable to open browser</string>
+    <string name="powered_by_dora_chat">Powered by Dora Chat</string>
 </resources>

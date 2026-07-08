@@ -37,7 +37,8 @@ object AuthManager {
                     val user = it.data
                     if (user != null) {
                         SignInExpiredBus.reset()
-                        UserManager.ins?.setCurrentUser(DoraUser(user.erc20, user.latestSignIn))
+                        UserManager.ins?.setCurrentUser(DoraUser(user.erc20, user.latestSignIn,
+                            if (DoraChatSDK.getConfig()?.loadAccessToken == true) user.accessToken else ""))
                         TokenStore.save(user.accessToken, user.refreshToken)
                         RxBus.getInstance().post(SignInEvent(user.erc20))
                         listener?.onSuccess(user)

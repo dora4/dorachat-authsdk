@@ -46,7 +46,15 @@ class SignInActivity : BaseActivity<ActivitySignInBindingImpl>() {
     }
 
     override fun initData(savedInstanceState: Bundle?, binding: ActivitySignInBindingImpl) {
-        binding.tvConnectWallet.setOnClickListener {
+        binding.ivBack.setOnClickListener { finish() }
+        if (DoraChatSDK.getConfig()?.showBrand == true) {
+            binding.tvBrand.text = DoraChatSDK.getConfig()?.appName +"\n${binding.tvBrand.text}"
+            if (DoraChatSDK.getConfig()?.themeColor != null) {
+                binding.tvBrand.setTextColor(DoraChatSDK.getConfig()?.themeColor!!)
+            }
+            binding.tvBrand.visibility = View.VISIBLE
+        }
+        binding.ivConnectWallet.setOnClickListener {
             if (DoraFund.isWalletConnected()) {
                 DoraAlertDialog.create(this@SignInActivity)
                     .show(R.layout.dialog_card) {
