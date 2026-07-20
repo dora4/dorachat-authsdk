@@ -89,7 +89,7 @@
             android:layout_height="36dp"
             android:layout_gravity="top|start"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="50dp"
             android:src="@drawable/ic_sign_in_back"/>
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_brand"

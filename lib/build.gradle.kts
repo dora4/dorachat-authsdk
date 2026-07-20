@@ -34,7 +34,7 @@ dependencies {
     kapt("com.alibaba:arouter-compiler:1.5.2")
     implementation("com.github.dora4:dcache-android:3.6.16")
     implementation("com.github.dora4:dview-loading-dialog:1.7")
-    implementation("com.github.dora4:dora-walletconnect-support:2.1.35") {
+    implementation("com.github.dora4:dora-walletconnect-support:2.1.37") {
         exclude(group = "com.madgag.spongycastle", module = "core")
     }
 }
@@ -58,7 +58,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "com.github.dora4"
                 artifactId = rootProject.project.name
-                version = "1.1.3"
+                version = "1.1.4"
             }
         }
     }
