@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.appcompat.widget.LinearLayoutCompat
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -10,8 +11,8 @@
     android:paddingHorizontal="10dp">
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/iv_card_logo"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="@dimen/dorachat_card_logo_icon_size"
+        android:layout_height="@dimen/dorachat_card_logo_icon_size"
         android:src="@mipmap/ic_launcher"/>
     <TextView
         android:id="@+id/tv_card_name"
@@ -19,7 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         tools:text="ERC20"
-        android:textSize="15sp"/>
+        android:textSize="@dimen/dorachat_card_name_text_size"/>
     <TextView
         android:id="@+id/tv_card_sign_out"
         android:layout_width="wrap_content"
@@ -28,5 +29,5 @@
         android:text="@string/disconnect"
         android:textColor="@color/dorachat_primary"
         android:textColorHighlight="@color/dorachat_panel_bg"
-        android:textSize="15sp"/>
+        android:textSize="@dimen/dorachat_sign_out_text_size"/>
 </androidx.appcompat.widget.LinearLayoutCompat>

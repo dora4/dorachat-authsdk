@@ -13,7 +13,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="113dp"
+            android:layout_marginTop="@dimen/dorachat_main_content_top_margin"
             android:orientation="vertical">
             <LinearLayout
                 android:layout_width="match_parent"
@@ -27,7 +27,7 @@
                     android:layout_marginTop="24dp"
                     android:layout_marginStart="36dp"
                     android:text="@string/sign_in"
-                    android:textSize="34sp"
+                    android:textSize="@dimen/dorachat_sign_in_text_size"
                     android:textStyle="bold"
                     android:textColor="@color/dorachat_text_primary"/>
                 <TextView
@@ -36,26 +36,28 @@
                     android:layout_marginTop="24dp"
                     android:layout_marginStart="36dp"
                     android:text="@string/password"
-                    android:textSize="20sp"
+                    android:textSize="@dimen/dorachat_password_text_size"
                     android:textColor="@color/dorachat_text_secondary"/>
                 <androidx.appcompat.widget.AppCompatEditText
                     android:id="@+id/et_password"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="12dp"
+                    android:layout_height="@dimen/dorachat_input_height"
+                    android:layout_marginTop="@dimen/dorachat_input_password_top_margin"
                     android:layout_marginHorizontal="36dp"
+                    android:gravity="center_vertical"
                     android:textColor="@color/dorachat_text_primary"
-                    android:padding="8dp"
+                    android:padding="@dimen/dorachat_input_padding"
                     android:maxLength="16"
                     android:inputType="textPassword"
                     android:background="@drawable/shape_sign_in_input_bg"/>
                 <Button
                     android:id="@+id/btn_sign_in"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_height="@dimen/dorachat_input_height"
                     android:layout_marginTop="50dp"
                     android:layout_marginHorizontal="36dp"
                     android:text="@string/sign_in_button"
+                    android:textSize="@dimen/dorachat_sign_in_btn_text_size"
                     android:textColor="@color/white"
                     android:background="@drawable/shape_sign_in_btn_bg"/>
                 <TextView
@@ -65,7 +67,7 @@
                     android:gravity="center"
                     android:layout_marginVertical="40dp"
                     android:text="@string/forget_your_password"
-                    android:textSize="16sp"
+                    android:textSize="@dimen/dorachat_forget_password_text_size"
                     android:textColor="@color/dorachat_text_primary"/>
             </LinearLayout>
             <RelativeLayout
@@ -79,34 +81,34 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:layout_marginVertical="30dp"
-                    android:textSize="16sp"
+                    android:textSize="@dimen/dorachat_sign_up_text_size"
                     android:textColor="@color/dorachat_text_secondary"/>
             </RelativeLayout>
         </LinearLayout>
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/iv_back"
-            android:layout_width="36dp"
-            android:layout_height="36dp"
+            android:layout_width="@dimen/dorachat_back_btn_icon_size"
+            android:layout_height="@dimen/dorachat_back_btn_icon_size"
             android:layout_gravity="top|start"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginStart="@dimen/dorachat_back_btn_start_margin"
+            android:layout_marginTop="@dimen/dorachat_brand_top_margin"
             android:src="@drawable/ic_sign_in_back"/>
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_brand"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="top|end"
-            android:textColor="#FFDEAD"
+            android:textColor="@color/dorachat_text_brand"
             android:text="@string/powered_by_dora_chat"
             android:visibility="gone"
-            android:layout_marginEnd="20dp"
-            android:layout_marginTop="30dp"/>
+            android:layout_marginEnd="@dimen/dorachat_brand_end_margin"
+            android:layout_marginTop="@dimen/dorachat_brand_top_margin"/>
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/iv_connect_wallet"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="@dimen/dorachat_wallet_connect_icon_size"
+            android:layout_height="@dimen/dorachat_wallet_connect_icon_size"
             android:layout_gravity="bottom|center_horizontal"
-            android:layout_marginBottom="60dp"
+            android:layout_marginBottom="@dimen/dorachat_wallet_connect_bottom_margin"
             android:src="@drawable/ic_wallet_connect"/>
     </FrameLayout>
 </layout>

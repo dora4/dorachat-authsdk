@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <dimen name="dorachat_main_content_top_margin">113dp</dimen>
+    <dimen name="dorachat_wallet_connect_icon_size">60dp</dimen>
+    <dimen name="dorachat_wallet_connect_bottom_margin">60dp</dimen>
+    <dimen name="dorachat_brand_top_margin">30dp</dimen>
+    <dimen name="dorachat_brand_end_margin">20dp</dimen>
+    <dimen name="dorachat_back_btn_icon_size">36dp</dimen>
+    <dimen name="dorachat_back_btn_top_margin">50dp</dimen>
+    <dimen name="dorachat_back_btn_start_margin">20dp</dimen>
+    <dimen name="dorachat_input_height">50dp</dimen>
+    <dimen name="dorachat_input_corner_radius">25dp</dimen>
+    <dimen name="dorachat_input_padding">8dp</dimen>
+    <dimen name="dorachat_sign_in_text_size">34sp</dimen>
+    <dimen name="dorachat_sign_in_btn_text_size">15sp</dimen>
+    <dimen name="dorachat_sign_in_btn_corner_radius">25dp</dimen>
+    <dimen name="dorachat_sign_up_text_size">16sp</dimen>
+    <dimen name="dorachat_sign_out_text_size">15sp</dimen>
+    <dimen name="dorachat_password_text_size">20sp</dimen>
+    <dimen name="dorachat_input_password_top_margin">12dp</dimen>
+    <dimen name="dorachat_forget_password_text_size">16sp</dimen>
+    <dimen name="dorachat_card_logo_icon_size">100dp</dimen>
+    <dimen name="dorachat_card_name_text_size">15sp</dimen>
+</resources>
