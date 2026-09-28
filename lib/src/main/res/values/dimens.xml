@@ -4,7 +4,7 @@
     <dimen name="dorachat_main_content_top_margin">113dp</dimen>
     <dimen name="dorachat_wallet_connect_icon_size">60dp</dimen>
     <dimen name="dorachat_wallet_connect_bottom_margin">60dp</dimen>
-    <dimen name="dorachat_brand_top_margin">30dp</dimen>
+    <dimen name="dorachat_brand_top_margin">36dp</dimen>
     <dimen name="dorachat_brand_end_margin">20dp</dimen>
     <dimen name="dorachat_back_btn_icon_size">36dp</dimen>
     <dimen name="dorachat_back_btn_top_margin">50dp</dimen>
